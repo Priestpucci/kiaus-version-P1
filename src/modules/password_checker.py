@@ -1,1 +1,1 @@
-print("Hello like mangos")
+print("Hello like mangos").lower()
