@@ -21,19 +21,23 @@ def Grade(score):
   elif score >= grade_boundaries[6]:
       print('student obtained | C')
   elif score >= grade_boundaries[8]:
-      print('c')
+      print('student obtained | D')')
   elif score >= grade_boundaries[10]:
       print('student obtained | E')
+  elif score >= grade_boundaries[11]:
+      print('student obtained | U'
   else:
-      print('student obtained | U')
+      print('student obtained | F')
          
 score = int(input("Enter the appropriate mark the student obtained out of Total: "))
-choice = input( "select method of calculation: (calculate Grade | 1 ) , (Calculate Percentage | 2) ")
+choice = input( "select method of calculation: (calculate Grade | 1 ) , (Calculate Percentage | 2) , (Calculate Grade & Percentage | 3) ")
 
 if choice == "1":
     Grade(score)
 elif choice == "2":
    Calculate_percentage(score)
+elif choice == "3":
+   grade(score) and 
 
 # NEED TO CREATE A  NAME SYSTEM; CAN ALLOCATE BOTH GRADES AND PERCENTAGES TO A STUDENT AND SAVE IT INTO A DATABASE
 # CSV FOR EXCEL DATABASE TO MAKE IT USER FRIENDLY AND ACCESIBLE 
