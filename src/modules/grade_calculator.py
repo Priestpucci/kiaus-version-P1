@@ -29,6 +29,7 @@ def Grade(score):
   elif score >= grade_boundaries[3]:
         return 'C'
   elif score >= grade_boundaries[4]:
+<<<<<<< HEAD
         return 'D'
   elif score >= grade_boundaries[5]:
         return 'E'
@@ -40,6 +41,29 @@ score = int(input("Enter the appropriate mark the student obtained out of Total:
 if choice == "1":
      Student_grade = Grade(score)
      print(f'student obtained | {Student_grade}')
+=======
+      print('student obtained | B')
+  elif score >= grade_boundaries[6]:
+      print('student obtained | C')
+  elif score >= grade_boundaries[8]:
+      print('student obtained | D')')
+  elif score >= grade_boundaries[10]:
+      print('student obtained | E')
+  elif score >= grade_boundaries[11]:
+      print('student obtained | U'
+  else:
+      print('student obtained | F')
+         
+score = int(input("Enter the appropriate mark the student obtained out of Total: "))
+choice = input( "select method of calculation: (calculate Grade | 1 ) , (Calculate Percentage | 2) , (Calculate Grade & Percentage | 3) ")
+
+if choice == "1":
+    Grade(score)
+elif choice == "2":
+   Calculate_percentage(score)
+elif choice == "3":
+   grade(score) and 
+>>>>>>> 32e628d8b1604075586071813f3ada4dae284c55
 
 elif choice == "2":
      Student_percentage = Calculate_percentage(score)
