@@ -33,7 +33,7 @@ def Grade(score):
   elif score >= grade_boundaries[1]:
         return 'A'
   elif score >= grade_boundaries[2]:
-        return 'B'          # need to fix 
+        return 'B'          
   elif score >= grade_boundaries[3]:
         return 'C'
   elif score >= grade_boundaries[4]:
@@ -56,13 +56,13 @@ elif choice == "2":
 elif choice == "3":
      Student_grade = Grade(score)
      Student_percentage = Calculate_percentage(score)
-     Student_info = (f'Student name | {Student_name}  | Student Percentage | {Student_percentage}% | Student grade | {Student_grade}')
+     Student_info = [Student_name , f'{Student_percentage}%' , Student_grade]
      print(Student_info)
 
-     with open ('Student_database.txt', 'w', newline="") as file:
-         writer = csv.writer(file)
-         writer.writerow(["Name" , "Percentage" , "Grade"])
-         writer.writerow(Student_info)
+     with open ('Student_database.csv', 'a', newline="") as file:
+        writer = csv.writer(file)
+        writer.writerow(["Name" , "Percentage" , "Grade"])
+        writer.writerow(Student_info)
 
 
      

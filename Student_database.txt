@@ -1,2 +1,1 @@
-Name,Percentage,Grade
-S,t,u,d,e,n,t, ,n,a,m,e, ,|, ,K,i,a,u,s, ,K,n,i,g,h,t, , ,|, ,S,t,u,d,e,n,t, ,g,r,a,d,e, ,|, ,7,0,%, ,|, ,S,t,u,d,e,n,t, ,g,r,a,d,e, ,|, ,B
+
