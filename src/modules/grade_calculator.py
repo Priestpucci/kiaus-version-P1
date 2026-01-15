@@ -59,12 +59,12 @@ elif choice == "3":
      Student_info = [Student_name , f'{Student_percentage}%' , Student_grade]
      print(Student_info)
 
-     with open ('Student_database.csv', 'a', newline="") as file:
+     with open ('Student_database.csv', 'a', newline="") as file:       #change CSV file to our main database 
         writer = csv.writer(file)
         writer.writerow(["Name" , "Percentage" , "Grade"])
         writer.writerow(Student_info)
 
-
+#NOT DONE
      
  
 
